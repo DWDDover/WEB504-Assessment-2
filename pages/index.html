@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-selected-theme="green">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Declan Dover's portfolio about page">
+    <meta name="keywords" content="HTML, CSS, JavaScript, UI, UX, Student, Portfolio, Declan, Dover">
+    <meta name="author" content="Declan Dover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/global-styles/reset.css">
+    <link rel="stylesheet" href="../../assets/global-styles/typography.css">
+    <link rel="stylesheet" href="../../assets/global-styles/global.css">
+    <link rel="stylesheet" href="../../utils/mixins.css">
+    <link rel="stylesheet" href="../utils/variables.css">
+    <script src="https://kit.fontawesome.com/7756f4b349.js" crossorigin="anonymous"></script>
+    <script src="../components/header/header.js" type="text/javascript" defer></script>
+    <script src="../components/footer/footer.js" type="text/javascript" defer></script>
+    <script src="../components/navbar/navbar.js" type="text/javascript" defer></script>
+    <link rel="icon" type="image/x-icon" href="../../assets/images/Logo.svg">
+    <title>Home - DD</title>
+</head>
+<body>
+<header-component></header-component>
+    <main>
+        <p class="decorative">DESIGNER & DEVELOPER</p>
+                <h2 class="theme-picker-title">Pick a Theme</h2>
+        <div class="theme-switcher">
+                <button data-theme="green" aria-pressed="true" class="theme-btn">Green</button>
+                <button data-theme="blue" aria-pressed="false" class="theme-btn">Blue</button>
+                <button data-theme="pink" aria-pressed="false" class="theme-btn">Pink</button>
+                <button data-theme="orange" aria-pressed="false" class="theme-btn">Orange</button>
+        </div>
+        <script src="../utils/themeswitch.js"></script>
+        <div class="content">
+            <p class="text">
+                I am Declan Dover, an IT student current studying at Nelson Marlborough Institute
+                of technology. My main interests are in UI/UX design and full stack
+                software development.
+                In my spare time I enjoy playing football and exploring the outdoors. <br><br>
+                This site is a place for me to share and explain some of my IT and design projects
+                and skills. <br><br>
+                Please feel free to reach out to me through the contact page or one of my 
+                links!
+            </p>
+            <p class="links">
+                <a href="https://github.com/DWDDover" aria-label="GitHub Profile">GitHub <i class="fa-brands fa-github"></i></a><br>
+            <a href="https://www.linkedin.com/in/declan-d-164638351/" aria-label="LinkedIn Profile">LinkedIn <i class="fa-brands fa-linkedin"></i></a>
+            </p>
+        </div>  
+        </main>
+    </div>
+    <footer-component></footer-component>
+</body>
+</html>

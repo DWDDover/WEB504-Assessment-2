@@ -18,43 +18,39 @@
     <link rel="stylesheet" href="home.css">
     <script src="https://kit.fontawesome.com/7756f4b349.js" crossorigin="anonymous"></script>
     <script src="home.js" defer></script>
+    <script src="../header/header.js" type="text/javascript" defer></script>
+    <script src="../footer/footer.js" type="text/javascript" defer></script>
+    <script src="../navbar/navbar.js" type="text/javascript" defer></script>
     <link rel="icon" type="image/x-icon" href="../../assets/images/Logo.svg">
     <title>Home - DD</title>
 </head>
 <body>
-  <header class="home-header">
-    <a href="../home/home.html">
-            <div class="title-container">
-      <h1 class="title">Portfolio_Declan Dover</h1>
-    </div>
-    </a>
-    <img class="logo" src="../../assets/images/Logo.svg" alt="dd logo icon">
-        </header>
+  <header-component></header-component>
     <div class="home-container">
-          <nav class="home-nav-bar">
-                <div class="nav-container">
-                  <a href="../home/home.html">
-                    <div class="homebutton" role="button">
+        <nav class="home-nav-bar">
+        <div class="nav-container">
+            <a href="../home/home.html">
+                <div class="homebutton" role="button">
                       Home
-                    </div>
-                  </a>
-                  <a href="../skills/skills.html">
-                    <div class="skillsbutton" role="button">
-                      Skills
-                    </div>
-                  </a>
-                  <a href="../projects/projects.html">
-                    <div class="projectsbutton" role="button">   
-                      Projects                      
-                    </div>
-                  </a>
-                  <a href="../contact/contact.html">
-                    <div class="contactbutton" role="button">
-                      Contact
-                    </div>
-                  </a>
                 </div>
-            </nav>
+            </a>
+            <a href="../skills/skills.html">
+                <div class="skillsbutton" role="button">
+                    Skills
+                </div>
+            </a>
+            <a href="../projects/projects.html">
+                <div class="projectsbutton" role="button">   
+                    Projects                      
+                </div>
+            </a>
+            <a href="../contact/contact.html">
+                <div class="contactbutton" role="button">
+                    Contact
+                </div>
+            </a>
+        </div>
+    </nav>
         <main class="text-area">
           <h2>About Declan Dover</h2>
           <hr class="solid">
@@ -73,14 +69,6 @@
             </div>
         </main>
     </div>
-    <footer class="home-footer">
-          <p class="links">
-              <a href="https://github.com/DWDDover" aria-label="GitHub Profile">GitHub <i class="fa-brands fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/declan-d-164638351/" aria-label="LinkedIn Profile">LinkedIn <i class="fa-brands fa-linkedin"></i></a>
-            </p>
-            <p class="copyright">
-                Written by Declan Dover &copy; 2025 All Rights Reserved
-            </p>
-        </footer>
+    <footer-component></footer-component>
 </body>
 </html>

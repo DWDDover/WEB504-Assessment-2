@@ -1,8 +1,25 @@
-:root {
-    --bg-color: #F0EBE9;
-    --color1: #B51E42;
-    --color2: #ED193D;
-    --color3: #EF3E37;
-    --color4: #FBAA19;
-    --darkbg: #272727;
+
+:root,
+[data-selected-theme="green"] {
+  --color-background: #A2FFA5;
+  --color-text: #034435;
+  --color-accent: #00CC66;
+}
+
+[data-selected-theme="blue"] {
+  --color-background: #55dde0;
+  --color-text: #2B4150;
+  --color-accent: #00D4E7;
+}
+
+[data-selected-theme="pink"] {
+  --color-background: #DFB2F4;
+  --color-text: #463546;
+  --color-accent: #F06EFC;
+}
+
+[data-selected-theme="orange"] {
+  --color-background: #FA7D61;
+  --color-text: #1E1E24;
+  --color-accent: #F3601C;
 }
