@@ -1,0 +1,52 @@
+.global-footer {
+    color: white;
+    grid-area: footer;
+    display: grid;
+    grid-template-rows 2fr 1fr;
+    grid-template-areas: 
+    'links'
+    'copyright';
+    font-weight: 500;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    margin-top: auto;
+    background-color: #2a2929;
+    padding: 0px;
+}
+
+.global-footer p {
+    margin: 5px;
+}
+
+.global-footer p a {
+    color: white;
+}
+
+.global-footer p a:visited {
+    color: white;
+}
+
+.global-footer p a:active {
+    color: rgb(216, 216, 216);
+}
+
+.copyright {
+    grid-area: copyright;
+    font-size:10pt;
+    vertical-align: bottom;
+}
+
+.links {
+    grid-area: links;
+    text-align: right;
+    font-size: 16pt;
+}
+
+@media only screen and (max-width: 600px) {
+    .global-footer {
+    height: 80px;
+    position: auto;
+    }
+}

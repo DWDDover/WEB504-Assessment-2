@@ -1,0 +1,13 @@
+body {
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    font-weight: 500;
+}
+
+h2 {
+    margin-top: 0;
+}

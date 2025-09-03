@@ -1,0 +1,116 @@
+.text-area {
+    height: 100%;
+    grid-area: main;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: rgb(255,255,255);
+    padding: 2rem;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 15% 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'form . details';
+}
+
+.contact-form {
+    grid-area: form;
+}
+
+.details {
+    grid-area: details;
+    font-size: inherit;
+}
+
+.input {
+  background-color: #05060f0a;
+  min-width: 15rem;
+  line-height: 2rem;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s,
+   color .3s cubic-bezier(.25,.01,.25,1) 0s, 
+   background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.input:hover, .input:focus, .input-group:hover .input {
+  outline: none;
+  border-color: var(--darkbg);
+}
+
+.input-group:hover .label, .input:focus {
+  color: #05060fc2;
+}
+
+.hidden {
+    display: none;
+}
+
+.submit-button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: var(--color3);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    min-width: 15rem;
+}
+
+.submit-button:hover, .submit-button:focus {
+    background-color: var(--darkbg);
+}
+
+.submit-button:active {
+    background-color: white;
+    color: black;
+    outline: 2px solid;
+}
+
+.contact-links a {
+    font-size: 24pt;
+}
+
+.contact-links a:hover, .contact-links a:focus {
+    color: var(--color3)
+}
+
+.contact-links a:active {
+    color: var(--color4);
+}
+
+@media only screen and (max-width: 700px) {
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hidden {
+        display: inherit;
+        margin-top: 2rem;
+    }
+
+        body {
+        max-width: 100vw;
+    }
+
+    .input {
+        min-width: 100%;
+    }
+
+    .submit-button {
+        min-width: 100%;
+    }
+
+    .contact-form {
+        min-width: 100%;
+    }
+
+    .text-area
+     {
+        min-width: 100%;
+    }
+}

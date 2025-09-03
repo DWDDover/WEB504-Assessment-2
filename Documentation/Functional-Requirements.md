@@ -1,0 +1,35 @@
+# Part B: Functional Requirements
+
+
+## Navigation Structure
+
+The navigation structure of a website is one of the most important concepts in terms of good user experience. There are many factors that contribute to a good navigation structure. The first factor is that the structure needs to be simple, allowing users to get where they want to in as few steps as possible. This means having as few navigation links as possible, and clearly labeling the ones that you do have [(7 Website Navigation Best Practices With Examples, n.d.)](https://www.zotero.org/google-docs/?ccTW6H). In the case of the portfolio site there will be four navigation links, each taking the user to a new page, rather than the use of jump links. These pages will be labeled:
+
+
+
+* Home
+* Skills
+* Projects
+* Contact
+
+These labels are distinct and clearly convey the area of the website that they will take the user, reducing the risk of navigation errors for users. Another factor is visibility. The navigation area of the website needs to be clearly visible to the user regardless of which section of a page they are currently in. In the case of the portfolio website the navigation area will always be present at the left of the screen, with vibrant colors so that it stands out at all times. Another factor is that the structure is designed for every screen size. The navigation links and a heading displaying to the user which section they are currently in need to be visible and clear on the screen regardless of the screen size [(Website Navigation, 2025)](https://www.zotero.org/google-docs/?V6t41b). In the case of the portfolio website, the navigation bar will be slightly smaller on mobile devices, but still usable and large enough for the user to click on. I will achieve this by having the bar take up a consistent fraction of the screen but removing the padding of each section when on smaller devices in order to use the screen real estate more efficiently. The projects page of the portfolio will contain further navigation, with a link to a larger explanation of each project. These links will take the user to a separate page dedicated fully to the explanation and images of a project. This page will have the usual navigation bar in order to move to other pages, as well as a back link at the bottom of the page to return to the list of projects.
+
+
+## Page Layouts
+
+The page layout of a website is another key concept of design in both user experience and overall user impression of a website's design. Each page of the portfolio site needs to have distinct sections serving a purpose and be laid out in a way that will make sense to the user. Each page will have a header containing the title of the page, a navigation bar on the left with links to the four sections, a main content area taking up the ⅔ of the pages width, and footer containing quick links to the portfolio owners social media and displaying copyright information. The layouts of the pages also need to be designed in a way that is flexible in the case of more content being added, or the content being changed [(15 Inspiring Portfolio Website Examples & Tips, n.d.)](https://www.zotero.org/google-docs/?1IXID8). This means designing the pages as a set of components and containers that hold content, and can be adapted to add or remove text from a description or add extra images to a project explanation. The layouts for these pages need to also be designed in a way that allows for responsiveness. Building responsiveness into a website happens all the way through development but factoring responsiveness into the way page layouts are designed early on will simplify and streamline the process. The layouts of the pages need to make sense in a way that can be laid out for mobile without changing the entire layout of a page. This means including elements in a  page that will be mostly unaffected by having their heights and widths changed [(Best Practices for Responsive Web Design, n.d.)](https://www.zotero.org/google-docs/?W3s7Oy).
+
+
+## Interactive Elements
+
+The site will include hover effects on links and buttons throughout the site to provide the user with a clearer indication of what they are about to click on, including an animated hover effect on the title of each page for decoration purposes. This is especially important for users with sight impairments and the web site will have the navigation links change color in a very distinct way when hovered over to cater to these users. The site will also use lightboxes when expanding images in the projects section in order to provide users more detailed views of the project owners work. Interactivity on a web page keeps users engaged and is a great way to maintain their attention [(Lab, n.d.)](https://www.zotero.org/google-docs/?49xX8C). The scope of this project is limited in the amount of interactive elements that are necessary but all project images will be clickable as well as links to expand each project, and hover and click effects for links and buttons will be applied whenever possible. The contact form will also contain interactivity in the form of text and button inputs, allowing the user to contact the portfolio owner without the use of an external communication system, as well as an interactive video player as part of one of the project explanations.
+
+
+## Contact Form
+
+The contact form page of the site needs to contain a variety of ways to contact the portfolio owner and links to other mediums of contact such as linkedin and github. The page will list the owner’s Name, email, and phone number, any relevant social links, and a contact form section in which the user can enter their name, email, and a message in order to contact the portfolio owner directly. This page needs to be simple to navigate and encourage communication between site visitors and the owner in order to achieve the key goals of growing the users online presence and finding potential employment opportunities. By collecting both names and emails of users the portfolio owner can respond to messages and build an email list of professional contacts in the industry [(Contact Form Design Tips and Best Practices, n.d.)](https://www.zotero.org/google-docs/?bmUMKw).
+
+
+## Multimedia Display
+
+The portfolio website will contain multimedia displays in the form of a video player and multiple image galleries. Multimedia elements help raise user engagement and overall experience through creating more interesting and unique content [(Using Images And Multimedia In Web Design | The Importance Of Multimedia In Web Design - New Perspective Design, 2023)](https://www.zotero.org/google-docs/?LK8pqe). The video player will be a custom player, designed to better fit the overall aesthetic of the web site and avoid looking out of place to the user. This also displays to the user a deeper understanding of web design and the portfolio owner's willingness to put in extra work for a more cohesive final design. The image galleries will also be part of each project explanation and give the user the option to expand and navigate through images to see a project in more detail.

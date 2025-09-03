@@ -1,0 +1,75 @@
+.content {
+    background-color:  rgb(255,255,255);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.text-area {
+    min-height: 100vh;
+    grid-area: main;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.skill {
+    width: 150px;
+    height: 230px;
+    background-color: var(--darkbg);
+    color: white;
+    padding: 0.5em;
+    margin: 0.2em;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 0.5em;
+    margin-top: 2em;
+}
+
+.skill:hover {
+        transform: scale(1.05);
+        animation: shadow-pulse 0.8s infinite alternate;
+    }
+
+    @keyframes shadow-pulse {
+        /* 0% {box-shadow: 0 0 1em 0.5em var(--color1);}
+        15% {box-shadow: 0 0 1em 0.5em var(--color2);}
+        30% {box-shadow: 0 0 1em 0.5em var(--color3);}
+        45% {box-shadow: 0 0 1em 0.5em var(--color4);}
+        60% {box-shadow: 0 0 1em 0.5em var(--color3);}
+        75% {box-shadow: 0 0 1em 0.5em var(--color2);}
+        100% {box-shadow: 0 0 1em 0.5em var(--color1);} */
+        0% {outline: 5px solid var(--color2);}
+        50% {outline: 5px solid var(--color4);}
+        100% {outline: 5px solid var(--color2);}
+        50% {outline: 5px solid var(--color4);}
+    }
+
+h3 {
+    margin: 0.2em
+}
+
+.skill-icon {
+    font-size: 72pt;
+}
+
+@media only screen and (max-width: 600px) {
+    .skill-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill {
+        margin: 2em;
+    }
+
+    body {
+        max-width: 100vw;
+    }
+}
