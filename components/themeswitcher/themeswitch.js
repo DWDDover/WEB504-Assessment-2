@@ -1,3 +1,23 @@
+class tswitch extends HTMLElement {
+    constructor() {
+        super()
+    }
+
+connectedCallback() {
+    this.innerHTML = `
+        <h2 class="theme-picker-title">Pick a Theme</h2>
+        <div class="theme-switcher">
+                <button data-theme="green" aria-pressed="true" class="theme-btn">Green</button>
+                <button data-theme="blue" aria-pressed="false" class="theme-btn">Blue</button>
+                <button data-theme="pink" aria-pressed="false" class="theme-btn">Pink</button>
+                <button data-theme="orange" aria-pressed="false" class="theme-btn">Orange</button>
+        </div>
+    `;
+}
+}
+
+customElements.define('tswitch-component', tswitch)
+
 const themeSwitcher = document.querySelector('.theme-switcher');
 const buttons = themeSwitcher.querySelectorAll('button');
 

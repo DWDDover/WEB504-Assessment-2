@@ -1,0 +1,89 @@
+header {
+    display: flex;
+    flex-direction: row;
+    height: max(80px, 10dvh);
+    padding: 0.5em;
+    justify-content: space-between;
+    font-size: 18pt;
+}
+
+header a {
+    place-self: center;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    height: 4vh;
+    place-self: center;
+}
+
+.login {
+    background: transparent;
+    color: inherit;
+    border: 2px solid var(--color-text);
+    transition: 0.5s;
+}
+
+.icon {
+        display: none;
+ }
+
+#burger {
+        display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        transition: 1s;
+        background-color: var(--color-background);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0;
+        width: 100dvw;
+    }
+
+    .login, .logo {
+        display: none;
+    }
+
+    #burger {
+        background-color: var(--color-background);
+        flex-direction: column;
+        z-index: 95;
+        grid-area: burger;
+        font-size: 28pt;
+        justify-content: space-between;
+        transition: 1s;
+        flex: 1;
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 0.5em;
+        outline: 2px solid var(--color-text);
+    }
+
+    #burger a {
+        margin-bottom: 0.5em;
+    }
+
+    #burger .login{
+        display: block
+    }
+
+    .icon {
+        display: block;
+        font-size: 40pt;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 96;
+    }
+
+    .navlink {
+        display: none;
+    }
+}

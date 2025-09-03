@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../../assets/global-styles/global.css">
     <link rel="stylesheet" href="../../utils/mixins.css">
     <link rel="stylesheet" href="../utils/variables.css">
+    <link rel="stylesheet" href="../components/header/header.css">
+    <link rel="stylesheet" href="../components/themeswitcher/themeswitch.css">
     <script src="https://kit.fontawesome.com/7756f4b349.js" crossorigin="anonymous"></script>
     <script src="../components/header/header.js" type="text/javascript" defer></script>
     <script src="../components/footer/footer.js" type="text/javascript" defer></script>
@@ -25,14 +27,9 @@
 <header-component></header-component>
     <main>
         <p class="decorative">DESIGNER & DEVELOPER</p>
-                <h2 class="theme-picker-title">Pick a Theme</h2>
-        <div class="theme-switcher">
-                <button data-theme="green" aria-pressed="true" class="theme-btn">Green</button>
-                <button data-theme="blue" aria-pressed="false" class="theme-btn">Blue</button>
-                <button data-theme="pink" aria-pressed="false" class="theme-btn">Pink</button>
-                <button data-theme="orange" aria-pressed="false" class="theme-btn">Orange</button>
-        </div>
-        <script src="../utils/themeswitch.js"></script>
+        <tswitch-component></tswitch-component>
+        <script src="../components/themeswitcher/themeswitch.js"></script>
+        <div class="content-container">
         <div class="content">
             <p class="text">
                 I am Declan Dover, an IT student current studying at Nelson Marlborough Institute
@@ -48,6 +45,7 @@
                 <a href="https://github.com/DWDDover" aria-label="GitHub Profile">GitHub <i class="fa-brands fa-github"></i></a><br>
             <a href="https://www.linkedin.com/in/declan-d-164638351/" aria-label="LinkedIn Profile">LinkedIn <i class="fa-brands fa-linkedin"></i></a>
             </p>
+        </div>
         </div>  
         </main>
     </div>

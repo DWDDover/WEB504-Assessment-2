@@ -3,40 +3,14 @@ body {
     color: var(--color-text);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100dvh;
     font-family: "Questrial", sans-serif;
     font-weight: 550;
     font-style: normal;
     padding: 0;
     margin: 0;
     transition: 1s;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    height: 10vh;
-    padding: 0.5em;
-    justify-content: space-between;
-    font-size: 18pt;
-}
-
-header a {
-    place-self: center;
-}
-
-header a:hover {
-    text-decoration: underline;
-}
-
-.logo {
-    height: 4vh;
-    place-self: center;
-}
-
-.theme-picker-title {
-    margin-top: 2em;
-    text-align: center;
+    min-width: 360px;
 }
 
 main {
@@ -46,16 +20,32 @@ main {
     justify-content: space-between;
 }
 
+.content-container {
+    margin: 4em 0;
+}
+
 .content {
     display: flex;
     flex-direction: row;
-    margin: 4em 0;
-    padding: 0 2em;
+    padding: min(2em, 8%);
     text-align: left;
     transition: 1s;
     justify-content: space-between;
+}
+
+.content * {
+    transition: 1s;
+}
+
+.content-container > div:nth-child(2n+1) {
     background-color: var(--color-text);
     color: var(--color-background);
+}
+
+.content-container > div:nth-child(2n) {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin-top: 0;
 }
 
 .text {
@@ -64,25 +54,6 @@ main {
 
 .links {
     font-size: 28pt;
-}
-
-.theme-switcher {
-    place-self: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.theme-switcher button {
-    border-radius: var(--border-radius);
-    background-color: transparent;
-    border: 2px solid var(--color-text);
-    padding: 0.5em;
-    font-size: 14pt;
-    min-width: 200px;
-    color: inherit;
-    transition: 0.5s;
-    margin: 0.5em;
 }
 
 button:hover {
@@ -95,18 +66,8 @@ button:active {
     transition: 0.5s;
 }
 
-.theme-btn[aria-pressed="true"] {
-    color: var(--color-background);
-    background-color: var(--color-text);
-    border: 2px solid var(--color-text);
-}
-
-.theme-btn[aria-pressed="true"]:hover {
-    box-shadow: none;
-}
-
 .decorative {
-    font-size: 70pt;
+    font-size: clamp(8vw, 80pt, 15vw);
     font-weight: 900;
     place-self: center;
     text-align: center;
@@ -117,72 +78,12 @@ button:active {
     transition: .5s;
 }
 
-.login {
-    background: transparent;
-    color: inherit;
-    border: 2px solid var(--color-text);
-    transition: 0.5s;
-}
-
-.icon {
-        display: none;
-    }
-
-    #burger {
-        display: none;
-    }
-
 @media only screen and (max-width: 600px) {
-    .decorative {
-        font-size: 40pt;
-    }
     .content {
         display: flex;
         flex-direction: column;
     }
-    header {
-        display: flex;
-        flex-direction: column;
-
-        justify-content: space-evenly;
-        height: 20vh;
-    }
-    .login {
-        display: none;
-    }
-    .logo {
-        display: none;
-    }
-    #burger {
-        background-color: var(--color-background);
-        flex-direction: column;
-        z-index: 95;
-        grid-area: burger;
-        font-size: 28pt;
-        justify-content: space-between;
-        transition: 1s;
-        flex: 1;
-        height: 100vh;
-        width: 100%;
-    }
-    #burger a {
-        margin: 0.5em 0;
-    }
-    #burger .login{
-        display: block
-    }
     .text {
         width: 100%;
-    }
-    .icon {
-        display: block;
-        font-size: 40pt;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 96;
-    }
-    .navlink {
-        display: none;
     }
 }
