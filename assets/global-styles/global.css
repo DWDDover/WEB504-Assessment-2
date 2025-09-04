@@ -33,10 +33,6 @@ main {
     justify-content: space-between;
 }
 
-.content * {
-    transition: 1s;
-}
-
 .content-container > div:nth-child(2n+1) {
     background-color: var(--color-text);
     color: var(--color-background);

@@ -4,12 +4,12 @@
     justify-content: space-evenly;
 }
 
-.skill-container:nth-of-type(2n+1) > div {
+ .content:nth-of-type(2n+1) .skill-container div {
     color: var(--color-text);
     background-color: var(--color-background);
 }
 
-.skill-container:nth-of-type(2n) > div {
+ .content:nth-of-type(2n) .skill-container div {
     background-color: var(--color-text);
     color: var(--color-background);
 }
@@ -20,13 +20,13 @@
 }
 
 .skill {
-    width: 150px;
-    height: 100%;
-    padding: 0.5em;
-    margin: 0.2em;
+    width: max(25%, 300px);
+    padding: 0.2em;
     text-align: center;
     transition: transform 0.3s ease-in-out;
-    margin-top: 2em;
+    margin: 0.5em;
+    transition: 1s;
+    font-size: 24pt;
 }
 
 .skill:hover {
@@ -39,15 +39,12 @@
         100% {outline: 5px solid var(--color2);}
         50% {outline: 5px solid var(--color4);}
     }
-h3 {
-    margin: 0.2em
-}
 
 .skill-icon {
     font-size: 72pt;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .skill-container {
         flex-direction: column;
         align-items: center;
