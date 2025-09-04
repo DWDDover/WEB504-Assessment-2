@@ -4,12 +4,12 @@
     justify-content: space-evenly;
 }
 
- .content:nth-of-type(2n+1) .skill-container div {
+ .content:nth-of-type(2n+1) .skill-container .skill div {
     color: var(--color-text);
     background-color: var(--color-background);
 }
 
- .content:nth-of-type(2n) .skill-container div {
+ .content:nth-of-type(2n) .skill-container .skill div {
     background-color: var(--color-text);
     color: var(--color-background);
 }
@@ -20,37 +20,53 @@
 }
 
 .skill {
-    width: max(25%, 300px);
-    padding: 0.2em;
+    perspective: 1000px;
+    transition: transform 0.6s ease-in-out;
+    place-self: center;
+    height: 300px;
+    cursor: pointer;
+}
+
+.card {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    display: grid;
+
+}
+
+.card-front,
+.card-back {
+    grid-area: 1 / 1;
     text-align: center;
-    transition: transform 0.3s ease-in-out;
-    margin: 0.5em;
-    transition: 1s;
-    font-size: 24pt;
+    font-size: 18pt;
+    backface-visibility: hidden;
+    justify-content: center;
+    padding: 0.5em;
+    height: 250px;
+    width: 250px;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
 }
 
 .skill:hover {
         transform: scale(1.05);
-        animation: shadow-pulse 0.8s infinite alternate;
-    }
-    @keyframes shadow-pulse {
-        0% {outline: 5px solid var(--color2);}
-        50% {outline: 5px solid var(--color4);}
-        100% {outline: 5px solid var(--color2);}
-        50% {outline: 5px solid var(--color4);}
     }
 
 .skill-icon {
-    font-size: 72pt;
+    font-size: 80pt;
+    place-self: center;
 }
 
 @media only screen and (max-width: 800px) {
     .skill-container {
         flex-direction: column;
         align-items: center;
-    }
-    .skill {
-        margin: 2em;
     }
 
     body {
