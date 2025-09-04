@@ -4,19 +4,33 @@
     justify-content: space-evenly;
 }
 
- .content:nth-of-type(2n+1) .skill-container .skill div {
-    color: var(--color-text);
-    background-color: var(--color-background);
-}
-
- .content:nth-of-type(2n) .skill-container .skill div {
+.content:nth-of-type(2n+1) .skill-container .skill div {
+    border: 2px solid var(--color-background);
     background-color: var(--color-text);
     color: var(--color-background);
+}
+
+.content:nth-of-type(2n) .skill-container .skill div {
+    outline: 2px solid var(--color-text);
+    color: var(--color-text);
+    background-color: var(--color-background);
 }
 
 .content {
     flex-direction: column;
     text-align: center;
+}
+
+.content:nth-of-type(2n) .skill-container .skill .card .card-back {
+    outline: none;
+    background-color: var(--color-text);
+    color: var(--color-background);
+}
+
+.content:nth-of-type(2n+1) .skill-container .skill .card .card-back {
+    border: none;
+    color: var(--color-text);
+    background-color: var(--color-background);
 }
 
 .skill {
