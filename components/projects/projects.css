@@ -24,7 +24,6 @@
 
 .project.hidden {
     display: none;
-    width: 0px;
 }
 
 .project.expanded {
@@ -32,19 +31,25 @@
 }
 
 .content.hidden {
-    display: none;
     width: 0px;
+    flex: 0;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
 }
 
 .expander {
     display: none;
-    margin: min(2em, 8%);
-    transition: 1s;
+    width: 0px;
+    margin-left: 0 min(4em, 8%);
+    flex: 1;
 }
 
-.expander.hidden {
-    display: none;
-    width: 0px;
+.content .expander:first-of-type {
+    margin-left: 0;
+}
+
+.content .expander:last-of-type {
+    margin-right: 0;
 }
 
 .expander.expanded {
@@ -52,16 +57,28 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 1em;
+    translate: none;
 }
 
 .content.expanded {
     display: flex;
 }
 
+.expander.hidden {
+    display: none;
+    width: 0px;
+}
+
+.content {
+    height: 650px;
+    flex: 1;
+}
+
 .content-container > div:nth-child(2n+1) div button {
     border: none;
     background-color: var(--color-background);
     color: var(--color-text);
+    border: 2px solid color-mix(in srgb, var(--color-text) 60%, black 40%);
 }
 
 .content-container > div:nth-child(2n+1) div button:hover {
@@ -77,7 +94,7 @@
 }
 
 .expand, .collapse {
-    width: 60%;
+    width: 15vw;
     place-self: center;
 }
 
@@ -106,4 +123,19 @@
     .expander {
         margin: 0;
     }
+    .expander.hidden {
+    display: none;
+    }
+    .content.hidden {
+    display: none;
+    height: 0px;
+    width: 0px;
+    flex: 0;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    }
+
+    .content {
+    height: auto;
+}
 }
