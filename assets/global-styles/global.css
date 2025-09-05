@@ -102,4 +102,7 @@ button:active {
     .text {
         width: 100%;
     }
+    body {
+        max-width: 100dvw;
+    }
 }
