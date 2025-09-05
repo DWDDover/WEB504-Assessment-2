@@ -20,13 +20,6 @@ header a:hover {
     place-self: center;
 }
 
-.login {
-    background: transparent;
-    color: inherit;
-    border: 2px solid var(--color-text);
-    transition: 0.5s;
-}
-
 .icon {
         display: none;
  }
@@ -35,7 +28,7 @@ header a:hover {
         display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     header {
         transition: 1s;
         background-color: var(--color-background);

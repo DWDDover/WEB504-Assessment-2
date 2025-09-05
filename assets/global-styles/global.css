@@ -55,10 +55,23 @@ main {
     font-size: 28pt;
 }
 
+
+button {
+    background-color: transparent;
+    border: 2px solid var(--color-text);
+    padding: 0.5em;
+    font-size: 14pt;
+    min-width: 200px;
+    color: inherit;
+    transition: 0.5s;
+    margin: 0.5em;
+}
+
 button:hover {
     box-shadow: 7px 6px 0 0 var(--color-text);
     transition: 0.5s;
     cursor: pointer;
+    background-color: var(--color-accent);
 }
 
 button:active {

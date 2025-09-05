@@ -10,18 +10,6 @@
     text-align: center;
 }
 
-.theme-switcher button {
-    border-radius: var(--border-radius);
-    background-color: transparent;
-    border: 2px solid var(--color-text);
-    padding: 0.5em;
-    font-size: 14pt;
-    min-width: 200px;
-    color: inherit;
-    transition: 0.5s;
-    margin: 0.5em;
-}
-
 .theme-btn[aria-pressed="true"] {
     color: var(--color-background);
     background-color: var(--color-text);

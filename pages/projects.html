@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-selected-theme="green">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Declan Dover's portfolio about page">
+    <meta name="keywords" content="HTML, CSS, JavaScript, UI, UX, Student, Portfolio, Declan, Dover">
+    <meta name="author" content="Declan Dover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/global-styles/reset.css">
+    <link rel="stylesheet" href="../../assets/global-styles/typography.css">
+    <link rel="stylesheet" href="../../assets/global-styles/global.css">
+    <link rel="stylesheet" href="../../utils/mixins.css">
+    <link rel="stylesheet" href="../utils/variables.css">
+    <link rel="stylesheet" href="../components/header/header.css">
+    <link rel="stylesheet" href="../components/themeswitcher/themeswitch.css">
+    <link rel="stylesheet" href="../components/projects/projects.css">
+    <script src="https://kit.fontawesome.com/7756f4b349.js" crossorigin="anonymous"></script>
+    <script src="../components/header/header.js" type="text/javascript" defer></script>
+    <script src="../components/footer/footer.js" type="text/javascript" defer></script>
+    <script src="../components/navbar/navbar.js" type="text/javascript" defer></script>
+    <link rel="icon" type="image/x-icon" href="../../assets/images/Logo.svg">
+    <title>Home - DD</title>
+</head>
+<body>
+<header-component></header-component>
+    <main>
+        <div class="title-container">
+            <p class="decorative">PROJECTS GALLERY</p>
+            <tswitch-component></tswitch-component>
+            <script src="../components/themeswitcher/themeswitch.js"></script>
+        </div>
+        <div class="content-container">
+            <div class="content">
+                <div class="project">
+                <h2>Mobile Payment UI</h2>
+                <p>
+                    A series of mockups and prototypes for 
+                    the payment system of a mobile
+                    banking application. I completed this 
+                    project as part of a larger study on the UI/UX 
+                    development process.
+                </p>
+                <img src="../assets/images/project-images/project2-images/bankthumb.png" alt="banking app project thumbnail" class="project-thumb">
+                <button id="MPU-button" class="expand">See More</button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="project">
+                <h2>Patient Record System</h2>
+                <p>
+                    A series of mockups and prototypes for 
+                    the payment system of a mobile
+                    banking application. I completed this 
+                    project as part of a larger study on the UI/UX 
+                    development process.
+                </p>
+                <img src="../assets/images/project-images/project3-images/patientthumb.png" alt="patient record project thumbnail" class="project-thumb">
+                <button id="PRS-button" class="expand">See More</button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="project">
+                <h2>Groundwater Infographics</h2>
+                <p>
+                    A series of science infographics made for Land Air Water Aotearoa.
+                  I designed and created these infographics as part of an online 2020 
+                  information campaign about groundwater processes.
+                </p>
+                <img src="../assets/images/project-images/project1-images/lawathumb.png" alt="infrographics project thumbnail" class="project-thumb">
+                <button id="PRS-button" class="expand">See More</button>
+                </div>
+            </div>
+        </div>  
+        </main>
+    </div>
+    <footer-component></footer-component>
+</body>
+</html>
