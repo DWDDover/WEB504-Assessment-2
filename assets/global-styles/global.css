@@ -79,7 +79,7 @@ button:active {
 }
 
 .decorative {
-    font-size: clamp(8vw, 80pt, 15vw);
+    font-size: min(10vw, 85pt);
     font-weight: 900;
     place-self: center;
     text-align: center;

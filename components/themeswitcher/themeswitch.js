@@ -12,6 +12,7 @@ connectedCallback() {
                 <button data-theme="blue" aria-pressed="false" class="theme-btn">Blue</button>
                 <button data-theme="pink" aria-pressed="false" class="theme-btn">Pink</button>
                 <button data-theme="orange" aria-pressed="false" class="theme-btn">Orange</button>
+                <button data-theme="boring" aria-pressed="false" class="theme-btn">Boring</button>
         </div>
       </div>
     `;

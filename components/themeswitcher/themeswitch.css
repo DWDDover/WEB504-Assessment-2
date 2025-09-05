@@ -36,6 +36,12 @@
     border: 2px solid #1E1E24;
 }
 
+.theme-btn[data-theme="boring"]:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
 .theme-btn[aria-pressed="true"] {
     color: var(--color-background);
     background-color: var(--color-text);

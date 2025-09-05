@@ -23,3 +23,9 @@
   --color-text: #1E1E24;
   --color-accent: #F3601C;
 }
+
+[data-selected-theme="boring"] {
+  --color-background: white;
+  --color-text: black;
+  --color-accent: grey;
+}
