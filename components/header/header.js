@@ -7,14 +7,16 @@ connectedCallback() {
     this.innerHTML = `
     <header>
         <a href="../pages/index.html"><img src="../assets/images/logo-transparent.svg" alt="Logo" class="logo"></a>
+        <div class="navlinks">
         <a class="navlink" href="index.html">Home</a>
         <a class="navlink" href="skills.html">Skills</a>
         <a class="navlink" href="projects.html">Projects</a>
         <a class="navlink" href="contact.html">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="expand()">
-        <i class="fa fa-bars"></i>
-        </a>
+        </div>
+        <div class="nav-buttons">
         <button id="login" class="login">Login</button>
+        <button id="sign-up" class="login">Sign Up</button>
+        </div>
       </header>
         <div id="mySidenav" class="sidenav">
           <a id="closeBtn" href="#" class="close">&times;</a>

@@ -2,9 +2,19 @@ header {
     display: flex;
     flex-direction: row;
     height: 80px;
-    justify-content: space-between;
     font-size: 18pt;
     margin: 0 min(2%, 2em);
+}
+
+.navlinks {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: row;
 }
 
 header a {
@@ -32,7 +42,7 @@ header a:hover {
     display: none;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
     header {
         display: none;
     }
