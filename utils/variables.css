@@ -9,7 +9,7 @@
 [data-selected-theme="blue"] {
   --color-background: #55dde0;
   --color-text: #2B4150;
-  --color-accent: #00D4E7;
+  --color-accent: #00a7b6;
 }
 
 [data-selected-theme="pink"] {
@@ -21,7 +21,7 @@
 [data-selected-theme="orange"] {
   --color-background: #FA7D61;
   --color-text: #1E1E24;
-  --color-accent: #F3601C;
+  --color-accent: #c44d16;
 }
 
 [data-selected-theme="boring"] {
