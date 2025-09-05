@@ -14,13 +14,13 @@ connectedCallback() {
         <a href="javascript:void(0);" class="icon" onclick="expand()">
         <i class="fa fa-bars"></i>
         </a>
-        <button class="login">Login</button>
+        <button id="login" class="login">Login</button>
         <div id=burger>
             <a href="">Home</a>
             <a href="">Skills</a>
             <a href="">Projects</a>
             <a href="">Contact</a>
-            <button class="login">Login</button>
+            <button id="login" class="login>Login</button>
         </div>
     </header>
     `;

@@ -10,7 +10,6 @@ body {
     padding: 0;
     margin: 0;
     transition: 1s;
-    min-width: 360px;
 }
 
 body * {
@@ -92,7 +91,7 @@ button:active {
 }
 
 .logo {
-    margin-left: 2em;
+    margin-left: 20%;
 }
 
 @media only screen and (max-width: 600px) {

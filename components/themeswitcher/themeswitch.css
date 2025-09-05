@@ -10,6 +10,32 @@
     text-align: center;
 }
 
+/* Styles for having each button be colored according to theme - undecided */
+
+.theme-btn[data-theme="green"]:hover {
+    color: #034435;
+    background-color: #A2FFA5;
+    border: 2px solid #034435;
+}
+
+.theme-btn[data-theme="blue"]:hover {
+    color: #2B4150;
+    background-color: #55dde0;
+    border: 2px solid #2B4150;
+}
+
+.theme-btn[data-theme="pink"]:hover {
+    color: #463546;
+    background-color: #DFB2F4;
+    border: 2px solid #463546;
+}
+
+.theme-btn[data-theme="orange"]:hover {
+    color: #1E1E24;
+    background-color: #FA7D61;
+    border: 2px solid #1E1E24;
+}
+
 .theme-btn[aria-pressed="true"] {
     color: var(--color-background);
     background-color: var(--color-text);
@@ -18,4 +44,6 @@
 
 .theme-btn[aria-pressed="true"]:hover {
     box-shadow: none;
+    background-color: var(--color-text);
+    color: var(--color-background);
 }

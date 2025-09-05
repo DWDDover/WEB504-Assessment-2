@@ -9,8 +9,6 @@
 }
 
 .content-container {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -18,37 +16,80 @@
 
 .project-thumb {
     height: 40%;
+    max-width: max(25vw, auto);
     object-fit: cover;
-    border: 3px solid var(--color-accent);
+    border: 3px solid color-mix(in srgb, var(--color-text) 60%, black 40%);
     place-self: center;
 }
 
-.expanded {
-    max-width: 0;
+.project.hidden {
+    display: none;
+    width: 0px;
 }
 
-.content-container > div:nth-child(2n+1) .project .expand {
+.project.expanded {
+    display: flex;
+}
+
+.content.hidden {
+    display: none;
+    width: 0px;
+}
+
+.expander {
+    display: none;
+    margin: min(2em, 8%);
+    transition: 1s;
+}
+
+.expander.hidden {
+    display: none;
+    width: 0px;
+}
+
+.expander.expanded {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.content.expanded {
+    display: flex;
+}
+
+.content-container > div:nth-child(2n+1) div button {
     border: none;
     background-color: var(--color-background);
     color: var(--color-text);
 }
 
-.content-container > div:nth-child(2n+1) .project .expand:hover {
+.content-container > div:nth-child(2n+1) div button:hover {
     background-color: var(--color-accent);
-    transform: scale(1.05);
     transition: 0.5s;
     cursor: pointer;
+    box-shadow: 7px 6px 0 0 color-mix(in srgb, var(--color-text) 60%, black 40%);
 }
 
-.expand {
+.content-container > div:nth-child(2n+1) div button:active {
+    box-shadow: inset 7px 6px 0 0 color-mix(in srgb, var(--color-text) 60%, black 40%);
+    transition: 0.5s;
+}
+
+.expand, .collapse {
     width: 60%;
     place-self: center;
+}
+
+.expand.hidden {
+    display: none;
 }
 
 .project {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 1em;
 }
 
 @media only screen and (max-width: 800px) {
@@ -61,5 +102,8 @@
         /* display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: none; */
+    }
+    .expander {
+        margin: 0;
     }
 }
