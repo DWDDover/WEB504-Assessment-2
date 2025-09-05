@@ -27,5 +27,5 @@
 [data-selected-theme="boring"] {
   --color-background: white;
   --color-text: black;
-  --color-accent: grey;
+  --color-accent: rgb(206, 206, 206);
 }

@@ -15,26 +15,39 @@ connectedCallback() {
         <i class="fa fa-bars"></i>
         </a>
         <button id="login" class="login">Login</button>
-        <div id=burger>
-            <a href="">Home</a>
-            <a href="">Skills</a>
-            <a href="">Projects</a>
-            <a href="">Contact</a>
-            <button id="login" class="login>Login</button>
+      </header>
+        <div id="mySidenav" class="sidenav">
+          <a id="closeBtn" href="#" class="close">&times;</a>
+          <ul>
+            <li><a href="index.html"><button>Home</button></a></li>
+            <li><a href="skills.html"><button>Skills</button></a></li>
+            <li><a href="projects.html"><button>Projects</button></a></li>
+            <li><a href="contact.html"><button>Contact</button></a></li>
+            <li><a href="#"><button>Log in</button></a></li>
+            <li><a href="#"><button>Sign Up</button></a></li>
+          </ul>
         </div>
-    </header>
+        <a href="#" id="burger-icon">
+          <i class="fa fa-bars burger-icon"></i>
+        </a>
     `;
 }
 }
 
 customElements.define('header-component', Header)
 
-function expand() {
-  var x = document.getElementById("burger");
-  if (x.style.display != "none") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "flex";
-  }
+var sidenav = document.getElementById("mySidenav");
+var openBtn = document.getElementById("burger-icon");
+var closeBtn = document.getElementById("closeBtn");
+
+openBtn.onclick = openNav;
+closeBtn.onclick = closeNav;
+
+function openNav() {
+  sidenav.classList.add("active");
+}
+
+function closeNav() {
+  sidenav.classList.remove("active");
 }
 
