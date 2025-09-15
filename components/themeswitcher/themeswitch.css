@@ -10,16 +10,36 @@
     text-align: center;
 }
 
-.theme-switcher button {
-    border-radius: var(--border-radius);
-    background-color: transparent;
-    border: 2px solid var(--color-text);
-    padding: 0.5em;
-    font-size: 14pt;
-    min-width: 200px;
-    color: inherit;
-    transition: 0.5s;
-    margin: 0.5em;
+/* Styles for having each button be colored according to theme - undecided */
+
+.theme-btn[data-theme="green"]:hover {
+    color: #034435;
+    background-color: #A2FFA5;
+    border: 2px solid #034435;
+}
+
+.theme-btn[data-theme="blue"]:hover {
+    color: #2B4150;
+    background-color: #55dde0;
+    border: 2px solid #2B4150;
+}
+
+.theme-btn[data-theme="pink"]:hover {
+    color: #463546;
+    background-color: #DFB2F4;
+    border: 2px solid #463546;
+}
+
+.theme-btn[data-theme="orange"]:hover {
+    color: #1E1E24;
+    background-color: #FA7D61;
+    border: 2px solid #1E1E24;
+}
+
+.theme-btn[data-theme="boring"]:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
 }
 
 .theme-btn[aria-pressed="true"] {
@@ -30,4 +50,22 @@
 
 .theme-btn[aria-pressed="true"]:hover {
     box-shadow: none;
+    background-color: var(--color-text);
+    color: var(--color-background);
+}
+
+@media only screen and (max-width: 600px) {
+    .theme-btn {
+        background-color: transparent;
+        border: 2px solid var(--color-text);
+        padding: 0.5em;
+        font-size: 12pt;
+        min-width: 150px;
+        color: inherit;
+        transition: 0.5s;
+        margin: 0.5em;
+    }
+    .theme-switcher {
+        min-width: none;
+    }
 }

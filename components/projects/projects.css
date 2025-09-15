@@ -1,80 +1,149 @@
-.content {
-    grid-area: contents;
-    background-color:  rgb(255,255,255);
-    margin-bottom: 2rem;
-    overflow: hidden;
-    max-height: 400px;
+/* .decorative {
+    font-size: clamp(4vw, 65pt, 10vw);
+    font-weight: 900;
+} */
+
+.title-container {
     display: grid;
-    grid-template-columns: 2fr 2rem 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    'description . img';
+    grid-template-columns: 4fr 1fr;
+    height: calc(90dvh - 80px);
+    align-items: center
 }
 
-.see-more {
-    outline: none;
-    cursor: pointer;
-    border: none;
-    background-color: var(--color3);
-    color: white;
-    max-width: 14em;
-    border-radius: 0.5rem;
-    padding: 0.5em;
-    text-align: center;
-    place-self: left;
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.see-more:hover, .see-more:focus {
-    background-color: var(--darkbg);
-}
-
-.see-more:active {
-    background-color: white;
-    color: black;
-    outline: 2px solid;
-}
-
-.thumb-img {
-    grid-area: img;
-    height: 100%;
-    width: 100%;
-    /* border: 2px solid black; */
-    border-radius: 0 0.5em 0.5em 0;
+.project-thumb {
+    height: 40%;
+    max-width: max(25vw, auto);
     object-fit: cover;
-    mask: linear-gradient(90deg, transparent, black);
-    background-color: white;
-    /* filter: blur(1.5px); */
+    border: 3px solid color-mix(in srgb, var(--color-text) 60%, black 40%);
+    place-self: center;
 }
 
-.description {
-    grid-area: description;
-    margin: 2em;
+.project.hidden {
+    display: none;
 }
 
-.text-area {
-    height: 100%;
-    grid-area: main;
-    font-family: "Barlow", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    /* background-color: rgb(255,255,255,0.9); */
+.project.expanded {
+    display: flex;
+}
+
+.content.hidden {
+    width: 0px;
+    flex: 0;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    padding: min(0.6em, 6%);
+}
+
+
+.expander {
+    display: none;
+    width: 0px;
+    margin-left: 0 min(4em, 8%);
+    flex: 1;
+}
+
+.content .expander:first-of-type {
+    margin-left: 0;
+}
+
+.content .expander:last-of-type {
+    margin-right: 0;
+}
+
+.expander.expanded {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    translate: none;
+    width: auto;
 }
 
-@media only screen and (max-width: 900px) {
-    .content {
-        display: flex;
+.content.expanded {
+    display: flex;
+}
+
+.expander.hidden {
+    display: none;
+    width: 0px;
+}
+
+.content {
+    height: 650px;
+    flex: 1;
+}
+
+.content-container > div:nth-child(2n+1) div button {
+    border: none;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    border: 2px solid color-mix(in srgb, var(--color-text) 60%, black 40%);
+}
+
+.content-container > div:nth-child(2n+1) div button:hover {
+    background-color: var(--color-accent);
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 7px 6px 0 0 color-mix(in srgb, var(--color-text) 60%, black 40%);
+}
+
+.content-container > div:nth-child(2n+1) div button:active {
+    box-shadow: inset 7px 6px 0 0 color-mix(in srgb, var(--color-text) 60%, black 40%);
+    transition: 0.5s;
+}
+
+.expand, .collapse {
+    width: 15vw;
+    place-self: center;
+}
+
+.expand.hidden {
+    display: none;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+@media only screen and (max-width: 800px) {
+    .title-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr 1fr;
+    }
+    .content-container {
         flex-direction: column;
+        min-width: none;
+    }
+    .expander {
+        margin: 0;
+        min-width: none;
+        flex: none;
+    }
+    .expander.hidden {
+        display: none;
+    }
+    .content.hidden {
+        display: none;
     }
     .content {
-        max-height: 600px;
+        flex-direction: column;
+        height: auto;
+        min-width: none;
     }
-    .skill {
-        margin: 2em;
-    }
-    .thumb-img {
-        border-radius: 0 0 0.5em 0.5em;
-        mask: linear-gradient(180deg, transparent, black, black);
-    }
+    .project-thumb {
+    height: auto;
+    max-width: max(25vw, auto);
+    object-fit: cover;
+    border: 3px solid color-mix(in srgb, var(--color-text) 60%, black 40%);
+    place-self: center;
+}
 }

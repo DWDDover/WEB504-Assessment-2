@@ -1,0 +1,5 @@
+.title-container {
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    min-height: calc(90dvh - 80px);
+}

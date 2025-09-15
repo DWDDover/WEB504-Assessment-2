@@ -5,12 +5,15 @@ body {
     flex-direction: column;
     height: 100dvh;
     font-family: "Questrial", sans-serif;
-    font-weight: 550;
+    font-weight: 500;
     font-style: normal;
     padding: 0;
     margin: 0;
     transition: 1s;
-    min-width: 360px;
+}
+
+body * {
+    transition: 1s;
 }
 
 main {
@@ -29,7 +32,6 @@ main {
     flex-direction: row;
     padding: min(2em, 8%);
     text-align: left;
-    transition: 1s;
     justify-content: space-between;
 }
 
@@ -52,9 +54,23 @@ main {
     font-size: 28pt;
 }
 
+
+button {
+    background-color: transparent;
+    border: 2px solid var(--color-text);
+    padding: 0.5em;
+    font-size: 14pt;
+    min-width: 200px;
+    color: inherit;
+    transition: 0.5s;
+    margin: 0.5em;
+}
+
 button:hover {
     box-shadow: 7px 6px 0 0 var(--color-text);
     transition: 0.5s;
+    cursor: pointer;
+    background-color: var(--color-accent);
 }
 
 button:active {
@@ -63,7 +79,7 @@ button:active {
 }
 
 .decorative {
-    font-size: clamp(8vw, 80pt, 15vw);
+    font-size: min(10vw, 85pt);
     font-weight: 900;
     place-self: center;
     text-align: center;
@@ -74,6 +90,10 @@ button:active {
     transition: .5s;
 }
 
+.logo {
+    margin-left: 20%;
+}
+
 @media only screen and (max-width: 600px) {
     .content {
         display: flex;
@@ -81,5 +101,8 @@ button:active {
     }
     .text {
         width: 100%;
+    }
+    body {
+        max-width: 100dvw;
     }
 }

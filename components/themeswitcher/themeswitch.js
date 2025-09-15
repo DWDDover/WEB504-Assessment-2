@@ -5,13 +5,16 @@ class tswitch extends HTMLElement {
 
 connectedCallback() {
     this.innerHTML = `
+    <div class="tswitch">
         <h2 class="theme-picker-title">Pick a Theme</h2>
         <div class="theme-switcher">
                 <button data-theme="green" aria-pressed="true" class="theme-btn">Green</button>
                 <button data-theme="blue" aria-pressed="false" class="theme-btn">Blue</button>
                 <button data-theme="pink" aria-pressed="false" class="theme-btn">Pink</button>
                 <button data-theme="orange" aria-pressed="false" class="theme-btn">Orange</button>
+                <button data-theme="boring" aria-pressed="false" class="theme-btn">Boring</button>
         </div>
+      </div>
     `;
 }
 }

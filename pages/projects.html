@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-selected-theme="green">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Declan Dover's portfolio about page">
+    <meta name="keywords" content="HTML, CSS, JavaScript, UI, UX, Student, Portfolio, Declan, Dover">
+    <meta name="author" content="Declan Dover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/global-styles/reset.css">
+    <link rel="stylesheet" href="../assets/global-styles/typography.css">
+    <link rel="stylesheet" href="../assets/global-styles/global.css">
+    <link rel="stylesheet" href="../utils/mixins.css">
+    <link rel="stylesheet" href="../utils/variables.css">
+    <link rel="stylesheet" href="../components/header/header.css">
+    <link rel="stylesheet" href="../components/themeswitcher/themeswitch.css">
+    <link rel="stylesheet" href="../components/projects/projects.css">
+    <script src="https://kit.fontawesome.com/7756f4b349.js" crossorigin="anonymous"></script>
+    <script src="../components/header/header.js" type="text/javascript" defer></script>
+    <script src="../components/footer/footer.js" type="text/javascript" defer></script>
+    <script src="../components/navbar/navbar.js" type="text/javascript" defer></script>
+    <script src="../components/projects/projects.js" type="text/javascript" defer></script>
+    <script src="../"></script>
+    <link rel="icon" type="image/x-icon" href="../assets/images/Logo.svg">
+    <title>Home - DD</title>
+</head>
+<body>
+    <header-component></header-component>
+    <main>
+        <div class="title-container">
+            <p class="decorative">PROJECTS GALLERY</p>
+            <tswitch-component></tswitch-component>
+            <script src="../components/themeswitcher/themeswitch.js"></script>
+        </div>
+        <div class="content-container">
+            <div class="content">
+                <div id="MPU-container" class="project">
+                    <h2>Mobile Payment UI</h2>
+                    <p>
+                        A series of mockups and prototypes for 
+                        the payment system of a mobile
+                        banking application. I completed this 
+                        project as part of a larger study on the UI/UX 
+                        development process.
+                    </p>
+                    <img src="../assets/images/project-images/project2-images/bankthumb.png" alt="banking app project thumbnail" class="project-thumb">
+                    <button class="expand">See More</button>
+                </div>
+                <div class="expander">
+                    <h2>Mobile Payment UI</h2>
+                    <p>
+                        I began with UI research, analyzing existing apps to identify 
+                        strengths and weaknesses. Common issues included small text, unclear navigation, and 
+                        inefficient ways to manage payees.
+                    </p>
+                    <img src="../assets/images/project-images/project2-images/wireframes.png" alt="banking app project thumbnail" class="project-thumb">
+                </div>
+                <div class="expander">
+                    <h2>High-fidelity Mockups</h2>
+                    <p>
+                        I then created user personas and developed wireframes to explore solutions. 
+                        Key design improvements included quick access to frequent payees, consistent 
+                        button styles, and better readability through larger text and 
+                        high-contrast colors.
+                    </p>
+                    <img src="../assets/images/project-images/project2-images/app.png" alt="banking app project thumbnail" class="project-thumb">
+                </div>
+                <div class="expander">
+                    <h2>Prototyping</h2>
+                    <p>
+                        I then created mockups of the UI for each step of the payment process. The final prototype 
+                        delivers a streamlined three-step payment flow: select payee, enter details, 
+                        confirm transaction. It introduces practical enhancements such as repeat payment shortcuts, 
+                        and easy new-payee options.
+                    </p>
+                    <video controls width="250" class="project-vid project-thumb" muted>
+            <source src="../../../assets/images/project-images/project2-images/project2-demo.mp4" type="video/mp4" />
+          </video>
+                    <button class="collapse"><a href="#MPU-container">See Less</a></button>
+                </div>
+            </div>
+            <div class="content">
+                <div id="PRS-container" class="project">
+                    <h2>Patient Record System</h2>
+                    <p>
+                        A series of mockups and prototypes for 
+                        the payment system of a mobile
+                        banking application. I completed this 
+                        project as part of a larger study on the UI/UX 
+                        development process.
+                    </p>
+                    <img src="../assets/images/project-images/project3-images/patientthumb.png" alt="patient record project thumbnail" class="project-thumb">
+                    <button class="expand">See More</button>
+                </div>
+                <div class="expander">
+                    <h2>Patient Record System</h2>
+                    <p>
+                        This project focused on developing a proof of concept for a patient profile management 
+                        system designed for use by healthcare providers. The system allows for storing, editing, 
+                        and retrieving patient personal and medical information. It was built as a Node.js command-line application. 
+                    </p>
+                    <img src="../assets/images/project-images/project3-images/patientinfo.png" alt="patient profile project patient info screen" class="project-thumb">
+                </div>
+                <div class="expander">
+                    <h2>Design</h2>
+                    <p>
+                        The application was designed with clear functionality: adding new patients, viewing and exporting 
+                        patient lists, editing and updating profiles, deleting records, and searching for patients by 
+                        various identifiers. To ensure maintainability and scalability, reusable functions and DRY principles were applied.
+                    </p>
+                    <img src="../assets/images/project-images/project3-images/patientsearch.png" alt="patient profile project search screen" class="project-thumb">
+                </div>
+                <div class="expander">
+                    <h2>Testing</h2>
+                    <p>
+                        Testing played a crucial role in the project, with both manual and automated approaches employed. 
+                        Manual testing focused on input validation, patient profile operations, and CSV export 
+                        reliability. Automated testing was implemented with Mocha and Sinon.
+                    </p>
+                    <img src="../assets/images/project-images/project3-images/test.png" alt="patient profile project testing screen" class="project-thumb">
+                    <button class="collapse"><a href="#PRS-container">See Less</a></button>
+                </div>
+            </div>
+            <div class="content">
+                <div id="GI-container" class="project">
+                    <h2>Groundwater Infographics</h2>
+                    <p>
+                        A series of science infographics made for Land Air Water Aotearoa.
+                        I designed and created these infographics as part of an online 2020 
+                        information campaign about groundwater processes.
+                    </p>
+                    <img src="../assets/images/project-images/project1-images/lawathumb.png" alt="infrographics project thumbnail" class="project-thumb">
+                    <button class="expand">See More</button>
+                </div>
+                <div class="expander">
+                    <h2>Groundwater Infographics</h2>
+                    <p>
+                        For this project, I was given a series of groundwater processes and information and some hand drawn 
+                        diagrams with explanations. I was asked to design more modern infographics based on these for a 2020 
+                        imformation campaign by Land Air Water Aotearoa
+                    </p>
+                    <img src="../assets/images/project-images/project1-images/lawathumb.png" alt="Infographics project diagram" class="project-thumb">
+                </div>
+                <div class="expander">
+                    <h2>Diagrams</h2>
+                    <p>
+                        The digrams explain things such as the different layers of the water table, the use of aquifers 
+                        in the extraction of water, and the ways in which different sediment types effect the flow of groundwater.
+                        The diagrams were created in Adobe Illustrator and Adobe Photoshop with close collaboration with experts.
+                    </p>
+                    <img src="../assets/images/project-images/project1-images/layers.png" alt="banking app project thumbnail" class="project-thumb">
+                </div>
+                <div class="expander">
+                    <h2>Final Results</h2>
+                    <p>
+                        The final graphics are a much more accessible and friendly approach to scientific diagrams, 
+                        while still maintaining scientific accuracy and information.
+                    </p>
+                    <img src="../assets/images/project-images/project1-images/rain.png" alt="infographic project rainwater diagram" class="project-thumb">
+                    <button class="collapse"><a href="#GI-container">See Less</a></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer-component></footer-component>
+</body>
+</html>

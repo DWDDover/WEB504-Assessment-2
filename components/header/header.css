@@ -1,10 +1,20 @@
 header {
     display: flex;
     flex-direction: row;
-    height: max(80px, 10dvh);
-    padding: 0.5em;
-    justify-content: space-between;
+    height: 80px;
     font-size: 18pt;
+    margin: 0 min(2%, 2em);
+}
+
+.navlinks {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: row;
 }
 
 header a {
@@ -20,70 +30,77 @@ header a:hover {
     place-self: center;
 }
 
-.login {
-    background: transparent;
-    color: inherit;
-    border: 2px solid var(--color-text);
-    transition: 0.5s;
-}
-
 .icon {
         display: none;
  }
 
-#burger {
-        display: none;
+.sidenav {
+    display: none;
 }
 
-@media only screen and (max-width: 600px) {
+#burger-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 850px) {
     header {
-        transition: 1s;
-        background-color: var(--color-background);
+        display: none;
+    }
+
+    .logo {
+        place-self: center;
+        height: 60%;
+        width: 60%;
+    }
+
+    .nav-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        padding: 0;
-        width: 100dvw;
     }
 
-    .login, .logo {
-        display: none;
-    }
-
-    #burger {
-        background-color: var(--color-background);
-        flex-direction: column;
-        z-index: 95;
-        grid-area: burger;
-        font-size: 28pt;
-        justify-content: space-between;
-        transition: 1s;
-        flex: 1;
-        height: 100vh;
-        width: 100%;
-        margin: 0;
-        padding: 0.5em;
-        outline: 2px solid var(--color-text);
-    }
-
-    #burger a {
-        margin-bottom: 0.5em;
-    }
-
-    #burger .login{
-        display: block
-    }
-
-    .icon {
+    #burger-icon {
         display: block;
         font-size: 40pt;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 96;
     }
 
-    .navlink {
-        display: none;
+    .sidenav button {
+        width: 250px;
+        background-color: var(--color-background);
+    }
+
+    .sidenav {
+        display: flex;
+        flex-direction: column;
+        height: 110%;
+        width: 300px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -300px;
+        background-color: var(--color-background);
+        padding-top: 70px;
+        transition: left 0.5s ease;
+        border: 2px solid var(--color-text);
+    }
+
+    .sidenav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidenav a:hover {
+        color: #111;
+    }
+
+    .sidenav.active {
+        left: 0;
+    }
+
+    .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 48pt;
     }
 }

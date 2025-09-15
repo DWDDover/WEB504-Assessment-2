@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../assets/global-styles/reset.css">
-    <link rel="stylesheet" href="../../assets/global-styles/typography.css">
-    <link rel="stylesheet" href="../../assets/global-styles/global.css">
-    <link rel="stylesheet" href="../../utils/mixins.css">
+    <link rel="stylesheet" href="../assets/global-styles/reset.css">
+    <link rel="stylesheet" href="../assets/global-styles/typography.css">
+    <link rel="stylesheet" href="../assets/global-styles/global.css">
+    <link rel="stylesheet" href="../utils/mixins.css">
     <link rel="stylesheet" href="../utils/variables.css">
     <link rel="stylesheet" href="../components/skills/skills.css">
     <link rel="stylesheet" href="../components/header/header.css">
@@ -21,79 +21,135 @@
     <script src="../components/header/header.js" type="text/javascript" defer></script>
     <script src="../components/footer/footer.js" type="text/javascript" defer></script>
     <script src="../components/navbar/navbar.js" type="text/javascript" defer></script>
-    <link rel="icon" type="image/x-icon" href="../../assets/images/Logo.svg">
+    <link rel="icon" type="image/x-icon" href="../assets/images/Logo.svg">
     <title>Skills - DD</title>
 </head>
 <body>
     <header-component></header-component>
-        <main>
+    <main>
+        <div class="title-container">
             <p class="decorative">INDUSTRY SKILLS</p>
             <tswitch-component></tswitch-component>
             <script src="../components/themeswitcher/themeswitch.js"></script>
-            <div class="content-container">
-                <div class="content">
-                    <h2>Front-End Skills</h2>
-                    <div class="skill-container">
-                        <div class="skill">
-                            <h3>HTML</h3>
-                            <i class="fa-brands fa-html5 skill-icon"></i>
-                            <p>Web markup</p>
+        </div>
+        <div class="content-container">
+            <div class="content">
+                <h2>Front-End Skills</h2>
+                <div class="skill-container">
+                    <div class="skill">
+                        <div class="card">
+                            <div class="card-front">
+                                <h3>HTML</h3>
+                                <i class="fa-brands fa-html5 skill-icon"></i>
+                            </div>
+                            <div class="card-back">
+                                <p>Web markup language for structuring web pages and content</p>
+                            </div>
                         </div>
-                        <div class="skill">
-                            <h3>CSS</h3>
-                            <i class="fa-brands fa-css skill-icon"></i>
-                            <p>Web styling</p>
+                    </div>
+                    <div class="skill">
+                        <div class="card">
+                            <div class="card-front">
+                                <h3>CSS</h3>
+                                <i class="fa-brands fa-css skill-icon"></i>
+                            </div>
+                            <div class="card-back">
+                                <p>Web styling language used to control the visual appearance of web pages.</p>
+                            </div>
                         </div>
-                        <div class="skill">
-                            <h3>JavaScript</h3>
-                            <i class="fa-brands fa-js skill-icon"></i>
-                            <p>Scripting language</p>
+                    </div>
+                    <div class="skill">
+                        <div class="card">
+                            <div class="card-front">
+                                <h3>JavaScript</h3>
+                                <i class="fa-brands fa-js skill-icon"></i>
+                            </div>
+                            <div class="card-back">
+                                <p>Scripting language for enabling dynamic and interactive features on web pages</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="content">
-                    <h2>Back-end Skills</h2>
-                    <div class="skill-container">
-                        <div class="skill">
-                            <h3>Node.js</h3>
-                            <i class="fa-brands fa-node-js skill-icon"></i>
-                            <p>Backend Runtime</p>
+            </div>
+            <div class="content">
+                <h2>Back-end Skills</h2>
+                <div class="skill-container">
+                    <div class="skill">
+                        <div class="card">
+                            <div class="card-front">
+                                <h3>Node.js</h3>
+                                <i class="fa-brands fa-node-js skill-icon"></i>
+                            </div>
+                            <div class="card-back">
+                                <p>Runtime environment that allows developers to execute JavaScript outside of a browser.</p>
+                            </div>
                         </div>
-                        <div class="skill">
-                            <h3>Java</h3>
-                            <i class="fa-brands fa-java skill-icon"></i>
-                            <p>Object Oriented Language</p>
+                    </div>
+                    <div class="skill">
+                        <div class="card">
+                            <div class="card-front">
+                                <h3>Java</h3>
+                                <i class="fa-brands fa-java skill-icon"></i>
+                            </div>
+                            <div class="card-back">
+                                <p>High-level, general-purpose, object-oriented programming language</p>
+                            </div>
                         </div>
-                        <div class="skill">
-                            <h3>MySQL</h3>
-                            <i class="fa-solid fa-database skill-icon"></i>
-                            <p>Relational Database</p>
+                    </div>
+                    <div class="skill">
+                        <div class="card">
+                            <div class="card-front">
+                                <h3>SQL</h3>
+                                <i class="fa-solid fa-database skill-icon"></i>
+                            </div>
+                            <div class="card-back">
+                                <p>Programming language for storing and processing information in a relational database</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
             <div class="content">
                 <h2>Design Skills</h2>
-                    <div class="skill-container">
-                        <div class="skill">
-                            <h3>Figma</h3>
-                            <i class="fa-brands fa-figma skill-icon"></i>
-                            <p>UI design</p>
-                        </div>
-                        <div class="skill">
-                            <h3>Illustrator</h3>
-                            <i class="fa-solid fa-draw-polygon skill-icon"></i>
-                            <p>Vector Design</p>
-                        </div>
-                        <div class="skill">
-                            <h3>Photoshop</h3>
-                            <i class="fa-solid fa-camera skill-icon"></i>
-                            <p>Image Editing</p>
+                <div class="skill-container">
+                    <div class="skill">
+                        <div class="card">
+                            <div class="card-front">
+                                <h3>Figma</h3>
+                                <i class="fa-brands fa-figma skill-icon"></i>
+                            </div>
+                            <div class="card-back">
+                                <p>Collaborative visual design tool and prototyping software</p>
+                            </div>
                         </div>
                     </div>
+                    <div class="skill">
+                        <div class="card">
+                            <div class="card-front">
+                                <h3>Illustrator</h3>
+                                <i class="fa-solid fa-draw-polygon skill-icon"></i>
+                            </div>
+                            <div class="card-back">
+                                <p>Professional vector-based graphic design software</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="card">
+                            <div class="card-front">
+                                <h3>Photoshop</h3>
+                                <i class="fa-solid fa-camera skill-icon"></i>
+                            </div>
+                            <div class="card-back">
+                                <p>Professional image editing and graphic design software</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </main>
+            </div>
         </div>
-        <footer-component></footer-component>
-    </body>
+        <script src="../components/skills/skills.js"></script>
+    </main>
+    <footer-component></footer-component>
+</body>
 </html>
