@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DWDDover/WEB504-Assessment-1/issues"
   },
-  "homepage": "https://github.com/DWDDover/WEB504-Assessment-1#readme"
+  "homepage": "https://github.com/DWDDover/WEB504-Assessment-1#readme",
+  "dependencies": {
+    "firebase": "^12.2.1"
+  }
 }
