@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/DWDDover/WEB504-Assessment-1#readme",
   "dependencies": {
-    "firebase": "^12.2.1"
+    "firebase": "^12.3.0"
   }
 }

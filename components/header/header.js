@@ -15,7 +15,6 @@ connectedCallback() {
         </div>
         <div class="nav-buttons">
         <button id="login" class="login">Login</button>
-        <button id="sign-up" class="login">Sign Up</button>
         </div>
       </header>
         <div id="mySidenav" class="sidenav">
@@ -25,8 +24,7 @@ connectedCallback() {
             <li><a href="skills.html"><button>Skills</button></a></li>
             <li><a href="projects.html"><button>Projects</button></a></li>
             <li><a href="contact.html"><button>Contact</button></a></li>
-            <li><a href="#"><button>Log in</button></a></li>
-            <li><a href="#"><button>Sign Up</button></a></li>
+            <li><a href="#"><button id='login'>Log in</button></a></li>
           </ul>
         </div>
         <a href="#" id="burger-icon">
