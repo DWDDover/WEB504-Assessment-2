@@ -25,7 +25,7 @@ The default URL will be dwddover.github.io
 
 ## License
 This project is distributed under the MIT license, located in<br>
-\WEB504-Assessment-1\LICENSE
+\WEB504-Assessment-2\LICENSE
 
 ## Author
 Created by Declan Dover 2025
